@@ -1,16 +1,19 @@
-html,
-body
+    html,
+    body
     {
         margin-left: 5%;
         margin-right: 5%;
-        background-color: black;
-        color: #ffffff;
+        margin-top: 0%;
+        background-color: #98c4cf;
+        color: #061925;
+        font-family: 'Raleway', sans-serif;
     }
     .back
     {
-        background-color: lightslategray;
+        background-color: #ebf3fc;
         height: 2000px;
-        margin: 1px;
+        margin-top: -21px;
+        margin-bottom: -8px;
     }
     .btns
     {
@@ -20,24 +23,24 @@ body
     .efeito
     {   
         border: none;
-        color: #ffffff;
+        color: #061925;
         padding: 25px;
-        width: 145px;
+        width: 150px;
         margin: 0px;
         font-size: 24px;
         line-height: 24px;
-        border-radius: 2px;
+        border-radius: 0px;
         position: relative;
         box-sizing: border-box;
         cursor: pointer;
         transition: all 400ms ease;
-        background-color: #8dbcf1;
+        background-color: #98c4cf;
     }
     .efeito:hover
     {
-        background: rgba(0, 0, 0, 0);
-        color:rgb(255, 255, 255);
-        box-shadow: inset 0 0 0 3px #ffffff;
+        background: #04618c;
+        columns: #ffffff;;
+        box-shadow: inset 0 0 0 3px #000000;
     }
     #menu{
         position: fixed;
@@ -45,5 +48,98 @@ body
         top: 40%;
         width: 4cm;
         margin-top: -2.5em;
-        margin-left: 5px;
+        margin-left: 0px;
+    }
+    header
+    {
+        background-color: #61a3ee;
+        height: 150px;
+        text-align: center;
+        font-size: 80px;
+    }
+    .cod
+    {
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 40px; 
+        margin-top: -5px;
+        margin: 0 auto;
+    }
+    .typing-animation{
+        animation: blinkCursor 500ms steps(2) infinite normal, 
+        typing 4s steps(41) 1s normal both;
+    }
+    @keyframes blinkCursor
+    {
+        from{
+            border-right-color: rgba(0, 0, 0, 0.75);
+        }
+        to{
+            border-right-color: transparent;
+        }
+    }
+    @keyframes typing
+    {
+        from{
+            width: 0;
+        }
+        to{
+            width: 460px;
+        }
+    }
+    .b {text-shadow: 0.01em 0.01em 0.05em black}
+    textarea:focus::placeholder{
+        color:white;
+    }
+    #Tradutor{
+        position: relative;
+    }
+    #mainDiv{
+        margin-top:150px;  
+    }
+    #encodeEnter , #decodeEnter{
+        width:100px;
+        height:40px;
+        background-color:#F7DC1B;
+        border:none;
+        display:block;
+        margin:15px;
+    }
+    #encodeEnter{
+        margin-top:50px;
+    }
+    /* encode div */
+    #encodeDiv , #decodeDiv{
+        margin-top:20px;
+        opacity:0;
+        display:none;
+    }
+    #encText , #decCode{
+        width:300px;
+        height:180px;
+        border:none;    
+    }
+    #encResult , #decResult{
+        width:300px;
+        height:200px;
+        background-color:white;
+        border:1px solid;
+        margin-top:10px;
+        display:none;
+    }
+    #encBtn ,#decBtn{
+        background-color:#F7DC1B;
+        width:100px;
+        height:30px;
+        border:none;
+        display:block;
+    }
+    #encBack , #decBack{
+        height:25px;
+        background-color:white;
+        border:none;
+    }
+    a{
+        text-decoration: none;
+        color: #061925;
     }

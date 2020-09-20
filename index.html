@@ -6,20 +6,43 @@
         <meta name="keywords" content="trabalho da faculdade">
         <title>Código morse</title>
         <link rel="stylesheet" type="text/css" href="css_index.css">
+        
     </head>
     <body >
+        <script src="tradutor.js"></script>
+        <header>
+            <div class="b">Código morse</div>
+            <div class="cod typing-animation"> -.-. -.. .. --. --- / -- --- .-. ... .</div>
+        </header>
         <div class="back">
-        <div>
-            <p id="menu">
-                <button type="button" class="efeito" class="btn">Efeito</button>
-                <button type="button" class="efeito" class="btn">Efeito</button> 
-                <button type="button" class="efeito" class="btn">Efeito</button>
-            </p>
-            <p>
-                <p><h1>Código morse</h1></p>
-                <p>um sistema de representação de letras, algarismos e sinais de pontuação através de um sinal codificado enviado de modo intermitente.</p>
-            </p>
-        </div>
+            <div id="menu">
+                <button type="button" class="efeito" class="btn">História</button>
+                <button type="button" class="efeito" class="btn">Tabela</button> 
+                <button type="button" class="efeito" class="btn"><a href="#Tradutor">Tradutor</a></button>
+            </div>
+            <p>um sistema de representação de letras, algarismos e sinais de pontuação através de um sinal codificado enviado de modo intermitente.</p>
+            <center>
+            <div id="Tradutor">
+                <div id="mainDiv">
+                    <button id="encodeEnter">Encode</button>
+                    <button id="decodeEnter">Decode</button>
+                </div>
+                    
+                <div id="encodeDiv">
+                    <textarea id="encText" placeholder="Text"></textarea>
+                    <button id="encBtn">Encrypt</button>
+                    <button id="encBack">⬅</button>
+                    <p id="encResult"></p>
+                </div>
+                    
+                <div id="decodeDiv">
+                    <textarea id="decCode" placeholder="Code"></textarea>
+                    <button id="decBtn">Decrypt</button>
+                    <button id="decBack">⬅</button>
+                    <div id="decResult"></div>
+                </div>
+            </div>
+            </center>
         </div>
     </body>
 </html>
