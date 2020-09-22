@@ -10,39 +10,61 @@
     </head>
     <body >
         <script src="tradutor.js"></script>
-        <header>
-            <div class="b">Código morse</div>
-            <div class="cod typing-animation"> -.-. -.. .. --. --- / -- --- .-. ... .</div>
+        <header> 
+            <button class="b" onclick="javascript:GoToHomePage()" href="javascript:void(0)">Código morse</button>
+            <div class="cod typing-animation"> -.-. -.. .. --. ---  -- --- .-. ... .</div>
         </header>
         <div class="back">
             <div id="menu">
-                <button type="button" class="efeito" class="btn">História</button>
-                <button type="button" class="efeito" class="btn">Tabela</button> 
-                <button type="button" class="efeito" class="btn"><a href="#Tradutor">Tradutor</a></button>
+                <button type="button" class="efeito btn">História</button>
+                <button type="button" class="efeito btn">Tabela</button> 
+                <button type="button" class="efeito btn" onclick="javascript:GoToTradutor()" href="javascript:void(0)">Tradutor</button>
             </div>
-            <p>um sistema de representação de letras, algarismos e sinais de pontuação através de um sinal codificado enviado de modo intermitente.</p>
+            <table>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
             <center>
-            <div id="Tradutor">
-                <div id="mainDiv">
-                    <button id="encodeEnter">Encode</button>
-                    <button id="decodeEnter">Decode</button>
-                </div>
-                    
-                <div id="encodeDiv">
-                    <textarea id="encText" placeholder="Text"></textarea>
-                    <button id="encBtn">Encrypt</button>
-                    <button id="encBack">⬅</button>
-                    <p id="encResult"></p>
-                </div>
-                    
-                <div id="decodeDiv">
-                    <textarea id="decCode" placeholder="Code"></textarea>
-                    <button id="decBtn">Decrypt</button>
-                    <button id="decBack">⬅</button>
-                    <div id="decResult"></div>
-                </div>
-            </div>
+            <table class="layout">
+                <tr>
+                    <a name="tradutor"></a>
+                    <td class="TradutorTxt"><br>
+                        <div class="margCod">                            
+                                <span class="c">C</span> 
+                                <span class="texttradu1">odificador</span>
+
+                                <div class="e">&</div>
+
+                               <span class="d">D</span>
+                               <span class="texttradu2">ecodificador</span> 
+                            
+                                <div class="texttradu3">de código morse</div>  
+                        </div>                
+                    </td>
+                    <td id="encodeDiv">
+                        <textarea id="encText" placeholder="Texto"></textarea>
+                        <button id="encBtn">Codificar</button>
+                        <button id="encBtnRes">X</button>
+                        <span id="encResult"></span>
+                    </td>
+                    <td id="decodeDiv">
+                        <textarea id="decCode" placeholder="Código"></textarea>
+                        <button id="decBtn">Decodificar</button>
+                        <button id="decBtnRes">X</button>
+                        <div id="decResult"></div>
+                </td>
+                </tr>
+            </table>
             </center>
+        </div>
+        <div id="voltarTopo">
+            <a href="#" id="subir">▲</a>
         </div>
     </body>
 </html>

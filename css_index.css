@@ -4,17 +4,20 @@
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 0%;
-        background-color: #98c4cf;
-        color: #061925;
-        font-family: 'Raleway', sans-serif;
+        background-color: #192734;
     }
     .back
     {
-        background-color: #ebf3fc;
-        height: 2000px;
+        background-color: #16202C;
         margin-top: -21px;
+    }
+    .layout
+    {
+        height: 765px;
+        position: relative;
         margin-bottom: -8px;
     }
+
     .btns
     {
         text-align: center;
@@ -23,24 +26,26 @@
     .efeito
     {   
         border: none;
-        color: #061925;
+        color: #8899A6;
         padding: 25px;
         width: 150px;
         margin: 0px;
         font-size: 24px;
         line-height: 24px;
-        border-radius: 0px;
+        border-radius: 10px;
         position: relative;
         box-sizing: border-box;
         cursor: pointer;
         transition: all 400ms ease;
-        background-color: #98c4cf;
+        background-color: #192734;
+        border: transparent;
+        outline: none;
     }
     .efeito:hover
     {
-        background: #04618c;
-        columns: #ffffff;;
-        box-shadow: inset 0 0 0 3px #000000;
+        background: #20405e;
+        columns: #ffffff;
+        box-shadow: inset 0 0 0 3px #101820;
     }
     #menu{
         position: fixed;
@@ -52,8 +57,8 @@
     }
     header
     {
-        background-color: #61a3ee;
-        height: 150px;
+        background-color: #20405e;
+        height: 160px;
         text-align: center;
         font-size: 80px;
     }
@@ -64,15 +69,17 @@
         font-size: 40px; 
         margin-top: -5px;
         margin: 0 auto;
+        color: #ffffff;
+        border-right: 2px solid #ffffff;
     }
     .typing-animation{
-        animation: blinkCursor 500ms steps(2) infinite normal, 
+        animation: blinkCursor 500ms steps(40) infinite normal , 
         typing 4s steps(41) 1s normal both;
     }
     @keyframes blinkCursor
     {
         from{
-            border-right-color: rgba(0, 0, 0, 0.75);
+            border-right-color:#ffffff;
         }
         to{
             border-right-color: transparent;
@@ -84,35 +91,28 @@
             width: 0;
         }
         to{
-            width: 460px;
+            width: 425px;
         }
     }
-    .b {text-shadow: 0.01em 0.01em 0.05em black}
-    textarea:focus::placeholder{
+    .b 
+    {
+        text-shadow: 0.01em 0.01em 0.05em black;
+        color: #ffffff;
+        font-size: 80px;
+        background-color: transparent;
+        font-family: 'Raleway', sans-serif;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    textarea:focus::placeholder
+    {
         color:white;
     }
-    #Tradutor{
-        position: relative;
-    }
-    #mainDiv{
-        margin-top:150px;  
-    }
-    #encodeEnter , #decodeEnter{
-        width:100px;
-        height:40px;
-        background-color:#F7DC1B;
-        border:none;
-        display:block;
-        margin:15px;
-    }
-    #encodeEnter{
-        margin-top:50px;
-    }
+
     /* encode div */
     #encodeDiv , #decodeDiv{
         margin-top:20px;
-        opacity:0;
-        display:none;
     }
     #encText , #decCode{
         width:300px;
@@ -120,12 +120,14 @@
         border:none;    
     }
     #encResult , #decResult{
-        width:300px;
+        width:302px;
         height:200px;
         background-color:white;
         border:1px solid;
         margin-top:10px;
-        display:none;
+        overflow: scroll;
+        text-align: left;
+        display: none;
     }
     #encBtn ,#decBtn{
         background-color:#F7DC1B;
@@ -133,13 +135,80 @@
         height:30px;
         border:none;
         display:block;
+        margin-left: 33%;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
     #encBack , #decBack{
         height:25px;
         background-color:white;
         border:none;
     }
-    a{
+    #encBtnRes{
+        display: none;
+        color: #ff5353;
+        border: 2px #101820;
+        background-color: #ffffff;
+        margin-bottom:  -30px;
+        margin-left: -30px;
+    }
+    #decBtnRes{
+        display: none;
+        color: #ff5353;
+        border: 2px #101820;
+        background-color: #ffffff;
+        margin-bottom:  -30px;
+        margin-left: 311px;
+    }
+    .TradutorTxt{
+        font-family: 'Fira Code', monospace;
+    }
+    .c, .d{
+        font-family: 'Holtwood One SC', serif;
+        color: #ff5353;
+        font-size: 100px;
+    }
+    .texttradu1{
+        margin-left: -12px;
+        font-size: 50px;
+        color: #8899A6;
+    }
+    .texttradu2{
+        margin-left: -15px;
+        font-size: 50px;
+        color: #8899A6;
+    }
+    .texttradu3{
+        font-size: 30px;
+        margin-top: -16px;
+        margin-left: 20px;
+        text-decoration: underline;
+        color: #4a6477;
+    }
+    .e{
+        font-size: 30px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        margin-left: 20px;
+        color: #4a6477;
+    }
+    .margCod{
+        margin-right: 100px;
+    }
+
+    /*botão por topo*/
+    #subir{
+        position:fixed;
+        bottom:30px;
+        right:50px;
+        color: #8899A6;
+        box-shadow: inset 0 0 0 3px #8899A6;
+        background-color: transparent;
         text-decoration: none;
-        color: #061925;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        line-height: 35px;
+        text-align: center;
+        font-family: 'Fira Code', monospace;
     }
