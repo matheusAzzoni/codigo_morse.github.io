@@ -6,14 +6,28 @@
         <meta name="keywords" content="trabalho da faculdade">
         <title>Código morse</title>
         <link rel="stylesheet" type="text/css" href="css_index.css">
-        
     </head>
-    <body >
+    <body>
         <script src="tradutor.js"></script>
-        <header> 
+        <header>
             <button class="b" onclick="javascript:GoToHomePage()" href="javascript:void(0)">Código morse</button>
             <div class="cod typing-animation"> -.-. -.. .. --. ---  -- --- .-. ... .</div>
         </header>
+        <span id="theme-toggle" class="theme-toggle"></span>
+        <script>
+            function toggleTheme() {
+                const htmlTag = document.getElementsByTagName('html')[0]
+                if (htmlTag.hasAttribute('data-theme')) {
+                htmlTag.removeAttribute('data-theme')
+                return
+                }
+
+                htmlTag.setAttribute('data-theme', 'dark')
+            }
+            document
+            .getElementById('theme-toggle')
+            .addEventListener('click', toggleTheme)
+        </script>
         <div class="back">
             <div id="menu">
                 <button type="button" class="efeito btn">História</button>
@@ -26,7 +40,7 @@
 
                     </td>
                     <td>
-
+                        
                     </td>
                 </tr>
             </table>
