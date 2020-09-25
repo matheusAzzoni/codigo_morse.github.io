@@ -76,7 +76,7 @@ a{
     text-align: right;
 }
 /*botão por topo*/
-#subir{
+#btntop{
     position:fixed;
     bottom:30px;
     right:50px;
@@ -90,6 +90,8 @@ a{
     line-height: 35px;
     text-align: center;
     font-family: 'Fira Code', monospace;
+    display: none;
+    border: none;
 }
 /*botão por topo*/
 /*Menu lateral*/

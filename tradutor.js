@@ -67,13 +67,18 @@ function GoToHomePage()
 {
     window.location = 'index.html';
 }
-function GoToTop()
-{
-    window.location = '#b';
+window.onscroll = function(){
+    scroll();
 }
-$(document).ready(function() {
-	$('#subir').click(function(){
-		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
-	});
-});
+function scroll(){
+    let btn = document.getElementById("btntop")
+    if(document.documentElement.scrollTop > 50){
+        btn.style.display = "block"
+    }
+    else{
+        btn.style.display="none";
+    }
+}
+function backToTop(){
+    document.documentElement.scrollTop = 0;
+}
