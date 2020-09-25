@@ -60,7 +60,8 @@ window.onload=function(){
     decBtnRes.onclick=function(){
         hide(decResult);
         hide(decBtnRes);
-    }  
+    } 
+    
 }
 function GoToHomePage()
 {

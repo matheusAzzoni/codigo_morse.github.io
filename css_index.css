@@ -276,7 +276,6 @@ a{
   .theme-toggle::after {
     content: var(--global-theme-toggle-content);
   }
-
 .unstyledTable{
     width: 1000px;
     text-align: center;
