@@ -67,10 +67,6 @@ function GoToHomePage()
 {
     window.location = 'index.html';
 }
-function GoToTradutor()
-{
-    window.location = '#tradutor';
-}
 function GoToTop()
 {
     window.location = '#b';

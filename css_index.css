@@ -3,7 +3,7 @@
     --primary-color: #8899A6;
     --secondary-color: #869BAD;
     --font-color: #202B33;
-    --bg-color: #C2E2FD;
+    --bg-color: #e2f2ff;
     --body-color: #6796CF;
     --global-theme-toggle-content: 'Dark mode';
     --head-color:#4EA1E6;
@@ -42,11 +42,38 @@ button{
     background-color: var(--bg-color);
     margin-top: -21px;
 }
-.layout
+a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+#layout1, #layout
 {
     height: 768px;
     position: relative;
     margin-bottom: -8px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#layout2{
+    height: 768px;
+    border-color: var(--font-color);
+    border-style: solid;
+    border-width:1px;
+    
+}
+.td2{
+    border-color: var(--font-color);
+    border-style: solid;
+    border-width:1px;
+}
+.font_texto{
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+}
+#font_historia{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
 }
 /*botão por topo*/
 #subir{
@@ -247,3 +274,29 @@ button{
   .theme-toggle::after {
     content: var(--global-theme-toggle-content);
   }
+
+.unstyledTable{
+    width: 1000px;
+    text-align: center;
+}
+table.unstyledTable td, table.unstyledTable th {
+  border: 2px solid var(--font-color);
+}
+table.unstyledTable tbody td {
+  font-size: 50px;
+  color: var(--font-color);
+}
+table.unstyledTable thead {
+  background: #DDDDDD;
+}
+table.unstyledTable thead th {
+  font-weight: normal;
+}
+table.unstyledTable tfoot {
+  font-weight: bold;
+}
+#tabela{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
